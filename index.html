@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Countdown Timer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="cont">
+    <h1>Event Countdown Timer</h1>
+    <label for="event-time">Select event time:</label>
+    <input type="datetime-local" id="event-time">
+    <button onclick="startCountdown()">Start Countdown</button>
+    <div id="countdown" class="countdown">
+      <div class="timer" id="days">00</div>
+      <div class="timer" id="hours">00</div>
+      <div class="timer" id="minutes">00</div>
+      <div class="timer" id="seconds">00</div>
+    </div>
+    <audio id="music" src="./music.mp3"></audio>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
